@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ background-color: black;
 }
 
 code {
@@ -35,4 +36,19 @@ code {
 .col-3{
   width: 25%;
   margin: 15px;
+}
+.swiper{
+  width: 100%;
+  height: 100%;
+}
+.swiper-slade {
+  background-position: center;
+  background-size: cover;
+}
+.swiper-slade img{
+  display: block;
+  width: 100%;
+}
+h3,p,h2,h1 {
+  color: white;
 }

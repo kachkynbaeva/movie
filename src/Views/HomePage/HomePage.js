@@ -1,7 +1,9 @@
 import {useEffect, useState} from "react";
 import axios from "axios";
-import MovieList from "../Components/MovieList/MovieList";
-import {API_KEY, BASE_URL } from "../config/config";
+import MovieList from '../../Components/MovieList/MovieList';
+import {API_KEY, BASE_URL } from "../../config/config";
+import Carousel from "../../Components/Carousel/Carousel";
+import Layout from "../../Components/Layout/Layout";
 
 const HomePage = () => {
     const [movies , setMovies] = useState([])
@@ -13,12 +15,13 @@ const HomePage = () => {
     console.log(movies)
 
     return (
-        <>
+        <Layout>
+            <Carousel movies = {movies}/>
             <div className="container">
                 <MovieList movies={movies}/>
             </div>
 
-        </>
+        </Layout>
     )
 }
-export default HomePage
+export default HomePage;
