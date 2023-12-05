@@ -1,11 +1,15 @@
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    background-color: transparent;
-}
+/*header{*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    position: sticky;*/
+/*    background-color: transparent;*/
+/*}*/
 header img{
     width: 150px;
     max-width: 100%;
+}
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
 }

@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- background-color: black;
+
 }
 
 code {
@@ -50,5 +50,42 @@ code {
   width: 100%;
 }
 h3,p,h2,h1 {
+  color: deeppink;
+}
+button{
+  padding: 5px 8px;
+  border-radius: 10px;
+  background-color: blue;
   color: white;
+  margin: 5px;
+}
+.inner{
+  display: flex;
+  justify-content: space-between;
+}
+.btn-inner{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+img{
+  width: 100%;
+}
+.col-4{
+  width: 33.33%;
+  padding: 15px;
+}
+.col-8{
+  width: 66.66%;
+  padding: 15px;
+}
+
+input{
+  padding: 5px 8px;
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+  margin: 5px;
 }
