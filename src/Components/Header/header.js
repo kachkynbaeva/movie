@@ -10,8 +10,8 @@ const Header = () => {
                 <div className='container'>
                     <div className={'header-wrapper'}>
                       <img src={logo} alt=""/>
-                      <Link to={'/'} >Home</Link>
-                      <Link to={'/searchpage'} >Search page</Link>
+                      <Link className={'link'} to={'/'} >Home</Link>
+                      <Link  className={'link'} to={'/searchpage'} >Search page</Link>
                     </div>
                 </div>
             </header>

@@ -13,3 +13,16 @@ header img{
     display: flex;
     justify-content: space-between;
 }
+header {
+    background-color: black;
+}
+.link {
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border:2px solid black;
+    background-color: darkgrey;
+    color:deeppink;
+    font-weight: bold;
+
+}
