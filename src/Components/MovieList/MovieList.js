@@ -10,9 +10,9 @@ const MovieList = ({movies}) => {
                     <div className={'col-3'}>
                         <div className={'movie-box'}>
                             <img className={'movie-img'}
-                                 src={`${IMAGE_URL}${movie.poster_path}`} alt=""/>
-                            <h3>{movie.title}</h3>
-                            <p>{movie.vote_average}</p>
+                                 src={`${IMAGE_URL}${movie?.poster_path}`} alt=""/>
+                            <h3>{movie?.title}</h3>
+                            <p>{movie?.vote_average}</p>
                         </div>
                     </div>
                 )

@@ -3,22 +3,26 @@ import layout from "../../Components/Layout/Layout";
 import {useParams} from "react-router-dom";
 import axios from "axios";
 import {API_KEY, BASE_URL} from "../../config/config";
+import {useDispatch, useSelector} from "react-redux";
+import {clearMovie, getMovie} from "../../redux/movieAction";
 
 
 const MoviePage = () => {
     const {id}= useParams()
-    const [movie,setMovie] = useState([])
-    useEffect(()=>{
-        axios (`${BASE_URL}movie/${id}?api_key=${API_KEY}$language=ru-RU`)
-            .then(({data}) => console.log(data))
-        axios (`${BASE_URL}movie/${id}/video?api_key=${API_KEY}$language=ru-RU`)
+    const dispatch = useDispatch()
+    const movie = useSelector(state => state.movie)
 
+    useEffect(()=> {
+        dispatch(getMovie(id))
+        return () =>{
+            dispatch(clearMovie())
+        }
     },[])
     return (
         <layout>
             <div
                 style={{
-                   backgroundImage: `url(https://image.tmdb.org/t/p/original${movie.backdrop_path})`,
+                   backgroundImage: `url(https://image.tmdb.org/t/p/original${movie?.backdrop_path})`,
                    backgroundSize: 'cover',
                    backgroundPosition:'center',
                    height: '100vh',
